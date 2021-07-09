@@ -1,4 +1,4 @@
 # caveadventure
 
 Mini JS game - takes about 5 minutes to play.
-Created with JavaScript, HTML, and CSS.
+Created with JavaScript and HTML.
