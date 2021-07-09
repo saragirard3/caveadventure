@@ -439,7 +439,12 @@ function death(e)
 
 function finalWin(e)
 {
-    content.innerHTML=`You won! Congrats!`;
+   content.innerHTML=`<p>You won! Congrats!
+    </p>
+    <p>Thanks for playing this mini text adventure game!</p>
+    <button id="close">Close</button>
+    `;
+    document.getElementById("close").addEventListener('click', death);
 }
 
 
