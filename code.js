@@ -439,7 +439,7 @@ function death(e)
 
 function finalWin(e)
 {
-    content.innerHTML(`You won! Congrats!`)
+    content.innerHTML=`You won! Congrats!`;
 }
 
 
