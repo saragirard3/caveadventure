@@ -1,4 +1,5 @@
 var content;
+var image;
 var playerName;
 var playerRace;
 var playerClass;
@@ -10,8 +11,11 @@ var playerMoney;
 
 window.onload = function()
 {
+    image = document.getElementById('imageForGame');
+    image.innerHTML = "<img src='/images/cave.jpg' />";
+
     content = document.getElementById('content');
-    content.innerHTML = "<p><h1> Welcome to the Cave!</h1> </p> <p> Are you ready to try your hand in this adventure?</p>";
+    content.innerHTML = "<h2> Welcome to the Cave!</h2> <p> Are you ready to try your hand in this adventure?</p>";
     content.innerHTML += "<button id='btnReady'>Ready!</button>";
     
     document.getElementById('btnReady').addEventListener('click', registration) ;
@@ -19,7 +23,9 @@ window.onload = function()
 
 function registration(e)
 {
-    
+    image.innerHTML = "<img src='/images/please-register.jpg' />";
+
+
     content.innerHTML = 
         `<h1>Hello!</h1>
         <p>Before you are able to enter the cave, you must do a quick registration process.</p>
