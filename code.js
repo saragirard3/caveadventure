@@ -25,7 +25,6 @@ function registration(e)
 {
     image.innerHTML = "<img src='/images/please-register.jpg' />";
 
-
     content.innerHTML = 
         `<h1>Hello!</h1>
         <p>Before you are able to enter the cave, you must do a quick registration process.</p>
@@ -50,14 +49,20 @@ function registration(e)
 
 function playerReg(e)
 {
+
+
+
     playerName = document.getElementById('name').value;
     
     if (document.getElementById('fairy').checked) {
         playerRace = document.getElementById('fairy').value;
+        image.innerHTML = "<img src='/images/fairy.png' />";
     } else if (document.getElementById('elf').checked) {
         playerRace = document.getElementById('elf').value;
+        image.innerHTML = "<img src='/images/elf.png' />";
     } else {
         playerRace = document.getElementById('gnome').value;
+        image.innerHTML = "<img src='/images/gnome.png' />";
     }
 
     if (document.getElementById('warrior').checked) {
@@ -138,6 +143,8 @@ function playerReg(e)
 
 function storeEquip(e)
 {
+    image.innerHTML = "<img src='/images/swordshield.png' />";
+
     content.innerHTML = 
     `
     <h1> Equipment Rentals </h1>
@@ -181,6 +188,10 @@ function storePurchase()
     var heart = 0;
     var hat = 0;
 
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
+
     if(document.getElementById("sword").checked)
     {
         sword = 5;
@@ -216,6 +227,9 @@ function storePurchase()
 
 function playerStats(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     content.innerHTML = 
     `Name: ` + playerName + 
     `<br>Race: ` + playerRace + 
@@ -231,12 +245,18 @@ function playerStats(e)
 
 function finalReg(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     content.innerHTML = `<p>Good luck on your adventure!</p><button id="scene1">Enter Cave</button>`
     document.getElementById("scene1").addEventListener('click', scene1);
 }
 
 function scene1(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     content.innerHTML = `
         <p>It is dark and the only light is the torch you just recieved from the Registrar.
 		<br>You can see about 15 feet away.
@@ -254,6 +274,9 @@ function scene1(e)
 
 function scene2(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     content.innerHTML=`
     <p>Well the smell hasn't gotten worse, but this hall looks like it might be smaller then the other one.
 	<br>As you continue walking, you see light in the distance.
@@ -269,6 +292,9 @@ function scene2(e)
 
 function scene3(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     content.innerHTML=`
     <p>They walk a short distance down this hall when all of a sudden....</p>
 	<p>*SMASH*</p>
@@ -284,6 +310,9 @@ function scene3(e)
 
 function scene4(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     content.innerHTML = `
     <p>The source of the smell is definitly here.
     <br>You take the torch and lights up the room torches near the door.
@@ -300,6 +329,9 @@ function scene4(e)
 
 function scene5(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     content.innerHTML = `
     <p>The ogre is dead. You made it out...mostly alive.
     <br>As you look around the room, you notice a door in the back.
@@ -311,6 +343,9 @@ function scene5(e)
 
 function scene6(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     content.innerHTML = `
     <p>Finally out of the room , you notice a doorway to the right in the hall.
     <br>Do you continue down the hallway or go through the door?</p>
@@ -324,6 +359,9 @@ function scene6(e)
 
 function scene7(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     playerMoney += 25;
     
     content.innerHTML = `
@@ -341,6 +379,9 @@ function scene7(e)
 
 function scene8(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
   content.innerHTML = `
     <p>This hallway feels like it takes forever.
     <br>After walking for who knows how long, you finally reach the end of the hall. 
@@ -374,6 +415,9 @@ function scene8(e)
 
 function combat1(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     var monsterHealth = 10;
     var monsterStrength = 3;
 
@@ -401,6 +445,9 @@ function combat1(e)
 
 function finalCombat(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     content.innerHTML=`
     <p>As soon as you walked into the room, a loud grumble came from the far side. 
     <br>Suddenly the ground shook almost like an earthquake. 
@@ -423,6 +470,9 @@ function finalCombat(e)
 
 function run1(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
    content.innerHTML = `
    <p>You all run to the door that you came in, however, the door shut behind you.
 	<br>The door is locked. </p>
@@ -445,6 +495,9 @@ function death(e)
 
 function finalWin(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
    content.innerHTML=`<p>You won! Congrats!
     </p>
     <p>Thanks for playing this mini text adventure game!</p>
@@ -456,6 +509,9 @@ function finalWin(e)
 
 function scene18(e)
 {
+    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "";
+
     content.innerHTML=`
     <p>You try to get the debris out of the way.
 	<br>Every time they move a little, a lot more falls in it's place.

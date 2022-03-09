@@ -1,5 +1,6 @@
 body{
-    background-color: #fad6af;
+    background-color: #134e13;
+;
 }
 
 #gameTitle{
@@ -8,11 +9,13 @@ body{
     color: mistyrose;
     border-style: ridge;
     border-color: darkgreen;
+    /*border-color: #8b228b;*/
 }
 
 #gameBody{
     border-style: ridge;
     border-color: rosybrown;
+    background-color: #fad6af;
 }
 
 .imageSquare{
