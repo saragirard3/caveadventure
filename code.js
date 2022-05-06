@@ -56,13 +56,13 @@ function playerReg(e)
     
     if (document.getElementById('fairy').checked) {
         playerRace = document.getElementById('fairy').value;
-        image.innerHTML = "<img src='/images/fairy.png' />";
+        image.innerHTML = "<img src='./images/fairy.png' />";
     } else if (document.getElementById('elf').checked) {
         playerRace = document.getElementById('elf').value;
-        image.innerHTML = "<img src='/images/elf.png' />";
+        image.innerHTML = "<img src='./images/elf.png' />";
     } else {
         playerRace = document.getElementById('gnome').value;
-        image.innerHTML = "<img src='/images/gnome.png' />";
+        image.innerHTML = "<img src='./images/gnome.png' />";
     }
 
     if (document.getElementById('warrior').checked) {
@@ -143,7 +143,7 @@ function playerReg(e)
 
 function storeEquip(e)
 {
-    image.innerHTML = "<img src='/images/swordshield.png' />";
+    image.innerHTML = "<img src='./images/swordshield.png' />";
 
     content.innerHTML = 
     `
@@ -188,7 +188,7 @@ function storePurchase()
     var heart = 0;
     var hat = 0;
 
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
 
@@ -227,7 +227,7 @@ function storePurchase()
 
 function playerStats(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     content.innerHTML = 
@@ -245,7 +245,7 @@ function playerStats(e)
 
 function finalReg(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     content.innerHTML = `<p>Good luck on your adventure!</p><button id="scene1">Enter Cave</button>`
@@ -254,7 +254,7 @@ function finalReg(e)
 
 function scene1(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     content.innerHTML = `
@@ -274,7 +274,7 @@ function scene1(e)
 
 function scene2(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     content.innerHTML=`
@@ -292,7 +292,7 @@ function scene2(e)
 
 function scene3(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     content.innerHTML=`
@@ -310,7 +310,7 @@ function scene3(e)
 
 function scene4(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     content.innerHTML = `
@@ -329,7 +329,7 @@ function scene4(e)
 
 function scene5(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     content.innerHTML = `
@@ -343,7 +343,7 @@ function scene5(e)
 
 function scene6(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     content.innerHTML = `
@@ -359,7 +359,7 @@ function scene6(e)
 
 function scene7(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     playerMoney += 25;
@@ -379,7 +379,7 @@ function scene7(e)
 
 function scene8(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
   content.innerHTML = `
@@ -415,7 +415,7 @@ function scene8(e)
 
 function combat1(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     var monsterHealth = 10;
@@ -445,7 +445,7 @@ function combat1(e)
 
 function finalCombat(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     content.innerHTML=`
@@ -470,7 +470,7 @@ function finalCombat(e)
 
 function run1(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
    content.innerHTML = `
@@ -495,7 +495,7 @@ function death(e)
 
 function finalWin(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
    content.innerHTML=`<p>You won! Congrats!
@@ -509,7 +509,7 @@ function finalWin(e)
 
 function scene18(e)
 {
-    // image.innerHTML = "<img src='/images/swordshield.png' />";
+    // image.innerHTML = "<img src='./images/swordshield.png' />";
     image.innerHTML = "";
 
     content.innerHTML=`
